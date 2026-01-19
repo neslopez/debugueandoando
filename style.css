@@ -215,3 +215,20 @@ footer {
     padding: 10px 20px;
   }
 }
+
+.project-card img {
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  color: #00c6ff;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.4;
+}
