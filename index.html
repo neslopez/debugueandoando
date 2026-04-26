@@ -3,110 +3,207 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DebugueandoAndo - Desarrollo a medida</title>
+  <title>DebugueandoAndo – Desarrollo Web y Apps a Medida</title>
+  <meta name="description" content="Desarrollo web, aplicaciones de escritorio y asesorías TIC a medida. Transformo tus ideas en sistemas modernos y eficientes." />
+  <meta property="og:title" content="DebugueandoAndo – Desarrollo a Medida" />
+  <meta property="og:description" content="Sitios web, apps móviles y sistemas de gestión personalizados." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <h1 class="logo">Debugueando<span>Ando</span></h1>
-    <nav>
-      <div class="menu-toggle" id="menu-toggle">
-  ☰
-</div>
 
-<ul class="nav-links" id="nav-links">
-  <li><a href="#inicio">Inicio</a></li>
-  <li><a href="#servicios">Servicios</a></li>
-  <li><a href="#proyectos">Proyectos</a></li>
-  <li><a href="#contacto">Contacto</a></li>
-</ul>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#inicio" class="logo">Debugueando<span>Ando</span></a>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- HERO -->
   <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
     <div class="hero-content">
-      <h2>Desarrollo Web y de Aplicaciones a Medida</h2>
-      <p>Transformo ideas en sistemas funcionales, modernos y eficientes.</p>
-      <a href="#contacto" class="btn">Contactame</a>
+      <div class="hero-badge">💻 Disponible para nuevos proyectos</div>
+      <h1>Desarrollo Web y Apps<br /><span class="highlight">a tu Medida</span></h1>
+      <p>Transformo ideas en sistemas funcionales, modernos y eficientes.<br />Cada proyecto, único. Cada solución, precisa.</p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn btn-primary">Hablemos por WhatsApp</a>
+        <a href="#proyectos" class="btn btn-ghost">Ver proyectos →</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>+10</strong><span>Proyectos</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><strong>100%</strong><span>A medida</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><strong>Web + App</strong><span>Escritorio</span></div>
     </div>
   </section>
 
+  <!-- SERVICIOS -->
   <section id="servicios" class="section">
-    <h2>Servicios</h2>
+    <div class="section-header">
+      <span class="section-tag">¿Qué hago?</span>
+      <h2>Servicios</h2>
+      <p>Soluciones digitales adaptadas a cada necesidad</p>
+    </div>
     <div class="services">
-      <div class="card">
+      <div class="card" data-delay="0">
+        <div class="card-icon">🌐</div>
         <h3>Desarrollo Web</h3>
-        <p>Diseño y desarrollo de sitios web modernos, adaptables y rápidos.</p>
+        <p>Sitios y aplicaciones web modernas, rápidas y adaptables a todos los dispositivos.</p>
       </div>
-      <div class="card">
+      <div class="card" data-delay="100">
+        <div class="card-icon">🖥️</div>
         <h3>Aplicaciones de Escritorio</h3>
-        <p>Soluciones personalizadas para empresas o proyectos individuales.</p>
+        <p>Soluciones personalizadas para gestión de negocios, stock, ventas y más.</p>
       </div>
-      <div class="card">
+      <div class="card" data-delay="200">
+        <div class="card-icon">🎓</div>
         <h3>Asesorías TIC</h3>
-        <p>Guío a mis clientes en la digitalización de sus ideas y procesos.</p>
+        <p>Guía profesional para digitalizar procesos e ideas de manera eficiente.</p>
       </div>
     </div>
   </section>
 
-  <section id="proyectos" class="section">
-  <h2>Trabajos reales</h2>
-
-  <div class="projects">
-
-    <div class="project-card">
-      <img src="paginadermocosmiatra.png" alt="Turnos web dermocosmiatra">
-      <h3>Turnos web – Dermocosmiatra</h3>
-      <p>
-        Página web responsive con turnos por WhatsApp, galería y presentación profesional
-        pensada para captar clientes desde el celular.
-      </p>
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="section section-dark">
+    <div class="section-header">
+      <span class="section-tag">Portafolio</span>
+      <h2>Trabajos reales</h2>
+      <p>Proyectos entregados, en producción y siendo usados</p>
     </div>
+    <div class="projects">
 
-    <div class="project-card">
-      <img src="appgastronomia.png" alt="App gestión gastronómica">
-      <h3>App de gestión gastronómica</h3>
-      <p>
-        Aplicación móvil para controlar costos, ventas y cierres de caja
-        en negocios gastronómicos.
-      </p>
+      <div class="project-card" data-delay="0">
+        <div class="project-img-wrap">
+          <img src="paginadermocosmiatra.png" alt="Turnos web dermocosmiatra" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-tag">Web</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Turnos web – Dermocosmiatra</h3>
+          <p>Página responsive con turnos por WhatsApp, galería y presentación profesional para captar clientes desde el celular.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-delay="100">
+        <div class="project-img-wrap">
+          <img src="appgastronomia.png" alt="App gestión gastronómica" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-tag">App Móvil</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>App de gestión gastronómica</h3>
+          <p>Control de costos, ventas y cierres de caja para negocios gastronómicos desde el celular.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-delay="200">
+        <div class="project-img-wrap">
+          <img src="sistemagestion.png" alt="Sistema de ventas y proveedores" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-tag">Escritorio</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Sistema de ventas y proveedores</h3>
+          <p>Sistema de escritorio para bicicletería: productos, proveedores y ventas en un solo lugar.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-delay="300">
+        <div class="project-img-wrap">
+          <img src="catalogofacil.png" alt="Catálogo Fácil PRO" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-tag">Web App</span>
+          </div>
+        </div>
+
+        
+        <div class="project-info">
+          <h3>Catálogo Fácil PRO</h3>
+          <p>App web para crear catálogos digitales y exportarlos en PDF listos para enviar por WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-delay="300">
+  <div class="project-img-wrap">
+    <img src="quinta-pura-vida.png" alt="Quinta Pura Vida - Sitio web" loading="lazy" />
+    <div class="project-overlay">
+      <span class="project-tag">Web</span>
     </div>
-
-    <div class="project-card">
-      <img src="sistemagestion.png" alt="Sistema de ventas y proveedores">
-      <h3>Sistema de ventas y proveedores</h3>
-      <p>
-        Sistema de escritorio para bicicletería:
-        gestión de productos, proveedores y ventas.
-      </p>
-    </div>
-
-    <div class="project-card">
-      <img src="catalogofacil.png" alt="Catálogo Fácil PRO">
-      <h3>Catálogo Fácil PRO</h3>
-      <p>
-        App web para crear catálogos digitales y exportarlos en PDF
-        listos para enviar por WhatsApp.
-      </p>
-    </div>
-
   </div>
-</section>
+  <div class="project-info">
+    <h3>Quinta Pura Vida</h3>
+    <p>
+      Sitio web para quinta de alquiler en Francisco Álvarez: presentación del lugar,
+      instalaciones y consulta de disponibilidad por WhatsApp.
+    </p>
+  </div>
+</div>
 
-  <section id="contacto" class="section contact">
-   <h2>Contacto</h2>
-  <p>¿¿Buscás soluciones digitales?? Hablemos directamente por WhatsApp.</p>
-  <a href="https://wa.me/5491135575997?text=Hola%20Ezequiel,%20quiero%20consultar%20sobre%20tus%20servicios"
-     class="btn" target="_blank">💬 Enviar mensaje</a>
+<div class="project-card" data-delay="600">
+  <div class="project-img-wrap">
+    <img src="distribuidora.png" alt="Sistema de gestión para distribuidora" loading="lazy" />
+    <div class="project-overlay"><span class="project-tag">Web App</span></div>
+  </div>
+  <div class="project-info">
+    <h3>Sistema para Distribuidora</h3>
+    <p>
+      App web con dashboard, gestión de clientes, productos, pedidos,
+      vendedores y comisiones. Responsive en PC y Mobile.
+    </p>
+  </div>
+</div>
+
+    </div>
+
+
   </section>
-<!-- Botón flotante de WhatsApp -->
-<a href="https://wa.me/5491135575997?text=Hola%20Ezequiel,%20quiero%20consultar%20sobre%20tus%20servicios"
-   class="whatsapp-float" target="_blank" title="Hablame por WhatsApp">
-  💬
-</a>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section contact">
+    <div class="contact-inner">
+      <div class="glow glow-contact"></div>
+      <span class="section-tag">¿Hablamos?</span>
+      <h2>¿Tenés una idea?<br />Hagámosla realidad.</h2>
+      <p>Contame tu proyecto y te digo cómo puedo ayudarte.</p>
+      <a href="https://wa.me/5491135575997?text=Hola%20Ezequiel,%20quiero%20consultar%20sobre%20tus%20servicios"
+         class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+        💬 Escribime por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- BOTÓN FLOTANTE -->
+  <a href="https://wa.me/5491135575997?text=Hola%20Ezequiel,%20quiero%20consultar%20sobre%20tus%20servicios"
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Hablame por WhatsApp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
   <footer>
-    <p>© 2025 DebugueandoAndo | Desarrollado por Ezequiel</p>
+    <p>© <span id="footer-year"></span> DebugueandoAndo | Desarrollado con 💙 por Ezequiel</p>
   </footer>
+
 </body>
 </html>
